@@ -26,9 +26,9 @@ numeri_casuali(numeri=random.randint(0,99))
 #es3
 #Creare una funzione descrizione_eta_casuale() con un parametro nome. L'eta e' calcolata in modo casuale La funzione restituisce una stringa formattata nel seguente modo: "nome ha eta anni." descrizione_eta_casuale("Pippo")
 
-def descrizione_eta_casuale(nome):
+def descrizione_eta_casuale(nome: str):
     
-    eta = random.randint(11,33)
+    eta = numeri_casuali()
     
     print(f"{nome} ha {eta} anni.")    
 
@@ -42,8 +42,10 @@ def descrizione_casuale2(nome):
         
     lista = ["Gianni", "Maria", "Marco", "Elisa"]
     
-    eta = random.randint(11,33)
+    nome = random.choice(lista)
+    
+    eta = numeri_casuali()
     
     print(f"{nome} ha {eta} anni.")
 
-descrizione_casuale2(nome = random.choice(lista))
+descrizione_casuale2(nome, eta)
