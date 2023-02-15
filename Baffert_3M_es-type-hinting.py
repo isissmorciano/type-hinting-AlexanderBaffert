@@ -8,11 +8,11 @@ import random
 
 #Creare una funzione descrizione() con due parametri nome ed eta. La funzione restituisce una stringa formattata nel seguente modo: "nome ha eta anni." descrizione("Pippo",23)
 
-def descrizione(nome, eta):
+def descrizione(nome: str, eta: int):
 
     print(f"{nome} ha {eta} anni.")
 
-descrizione(nome = "Marco", eta= "16")
+descrizione(nome = "Marco", eta= 16)
 
 #es2
 #Creare una funzione(?) numero_casuale() che restituisce un numero casuale tra 0 e 99. La funzione restituisce il numero generato numero_casuale()
